@@ -768,6 +768,7 @@
 
 /* Chatbox */
 #chatbot-box {
+     z-index: 1100;
   display: none;
   position: fixed;
   bottom: 100px;
