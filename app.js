@@ -15,4 +15,6 @@ app.use('/', require('./routes/index'));
 app.use('/api', require('./routes/chat'));
 app.use('/api', require('./routes/contact'));
 
-module.exports = app; // 👈 export the app instead of listening
+// ❌ remove app.listen()
+// ✅ export app for Vercel
+module.exports = app;
